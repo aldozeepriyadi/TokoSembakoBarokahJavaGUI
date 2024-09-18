@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Penukaran" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5e96855f-2cf0-4edb-a442-fa96d9c941a5">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ID Penukaran" class="java.lang.String"/>
+	<field name="Tanggal Penukaran" class="java.lang.String"/>
+	<field name="ID Member" class="java.lang.String"/>
+	<field name="Total Poin" class="java.lang.String"/>
+	<sortField name="REPORT_COUNT" type="Variable"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="209" y="49" width="136" height="30" uuid="7e76ad3a-44f0-485d-82a4-6ef98e7aea25"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe Script" size="14"/>
+				</textElement>
+				<text><![CDATA[TokoSembako Barokah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="24" width="136" height="30" uuid="7fb74329-226b-45f9-87be-be713abb530c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe Script" size="14"/>
+				</textElement>
+				<text><![CDATA[Laporan]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="0" width="100" height="30" uuid="b1013901-a1c4-4d7c-ae6d-18bc81741383">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36d482b2-906c-450c-8911-05701f9222a4"/>
+				</reportElement>
+				<text><![CDATA[ID Penukaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="1" width="100" height="30" uuid="1fc54ba0-ebbd-4047-a05c-9ee40028705e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="77b4ee08-ea46-410c-9e1d-8546ad3acfa9"/>
+				</reportElement>
+				<text><![CDATA[Tanggal Penukaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="-2" width="100" height="30" uuid="7ed860cb-7109-470e-8ba4-c49cf45daa30">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="15cd1ad4-2aaf-44f8-8d20-b3fe25696665"/>
+				</reportElement>
+				<text><![CDATA[ID Member]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="0" width="100" height="30" uuid="f17ae2e7-11c3-49d8-880c-2ba5f69a887a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="077e2a0b-42a8-4ee8-9769-9b30685e067e"/>
+				</reportElement>
+				<text><![CDATA[Total Poin]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="18" width="100" height="30" uuid="fb24ffcf-e0ea-4c22-bd12-1ebc0125f35f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36d482b2-906c-450c-8911-05701f9222a4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ID Penukaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="18" width="100" height="30" uuid="16ef99a2-fdfa-4572-94db-7253e5bbcf74">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="77b4ee08-ea46-410c-9e1d-8546ad3acfa9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Tanggal Penukaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="14" width="100" height="30" uuid="7f63589c-4429-42ba-94ae-350c121f19a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="15cd1ad4-2aaf-44f8-8d20-b3fe25696665"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ID Member}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="14" width="100" height="30" uuid="f90feb38-9260-4a6b-970b-d816550b9578">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="077e2a0b-42a8-4ee8-9769-9b30685e067e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Total Poin}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
